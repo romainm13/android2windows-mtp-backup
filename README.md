@@ -8,13 +8,13 @@ Note: This script has only been tested on a Samsung S20 FE phone and a Legion Y5
 
 ## How it works
 
-The Python code [main.py](http://main.py) launches a subprocess where a powershell script will download files via MTP. When it finishes, the files are moved to category folders. Pictures and videos are renamed by their modified dates. Their are many new features compared to https://github.com/nosalan/powershell-mtp-file-transfer and bug fixes.
+The Python code [main.py](http://main.py) launches a subprocess where a powershell script will download files via MTP. When it finishes, the files are moved to category folders. Pictures and videos are renamed by their modified dates. There are many new features compared to https://github.com/nosalan/powershell-mtp-file-transfer and bug fixes.
 
 ## New features
 
 ### Powershell
 
-- `dateThreshold` : only files newer than `dateThreshold` should be copied
+- `dateThreshold` : only files newer than `dateThreshold` will be copied
 - The script will not download files from `.thumbnails` folders
 - The script will skip trashed files (files starting with a dot)
 
@@ -29,7 +29,7 @@ The Python code [main.py](http://main.py) launches a subprocess where a powershe
 
 ### Bug fixed
 
-In the oldest version of the other repository, there was an issue where the Shell.Application wouldn't detect all files unless the folder on the phone to be backed up was opened in Windows Explorer previously.
+In the oldest version of @nolasan's repository, there was an issue where the Shell.Application wouldn't detect all files unless the folder on the phone to be backed up was opened in Windows Explorer previously.
 
 This problem has been solved by opening each Windows Explorer and waiting for all files to be loaded before closing it (recursively).
 
